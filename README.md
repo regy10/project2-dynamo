@@ -36,15 +36,15 @@ composer.lock
 3. Dockerfile
 Create a Dockerfile with the following contents:
 
-Dockerfile
+#Dockerfile
 Copy code
-# Use the official PHP image as the base image
+Use the official PHP image as the base image
 FROM php:8.2-apache
 
-# Copy the PHP application code to the Apache web root
+Copy the PHP application code to the Apache web root
 COPY . /var/www/html/
 
-# Expose port 80 to the outside world
+Expose port 80 to the outside world
 EXPOSE 80
 4. Application Files
 login.php
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </body>
 </html>
-guestlist.php
+#guestlist.php
 This file displays the guest list retrieved from DynamoDB:
 
 php
